@@ -20,6 +20,7 @@ const fillFeedbackFormFields = () => {
     feedbackForm.elements[key].value = formDataFromLS[key];
   });
 };
+console.log(formData);
 
 const onFeedbackFormInput = event => {
   const formField = event.target;
