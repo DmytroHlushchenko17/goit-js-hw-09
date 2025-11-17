@@ -9,7 +9,7 @@ const fillFeedbackFormFields = () => {
   const formDataFromLS = JSON.parse(
     localStorage.getItem('feedback-form-state')
   );
-  if (formDateFromLS === null) {
+  if (formDataFromLS === null) {
     return;
   }
 
@@ -28,7 +28,7 @@ const onFeedbackFormInput = event => {
 
   formData[formFieldName] = formFieldValue;
 
-  localStorage.setItem('feedback-form-state', JSON.stringify(formDate));
+  localStorage.setItem('feedback-form-state', JSON.stringify(formData));
 };
 
 const onFeedbackFormSudmit = event => {
