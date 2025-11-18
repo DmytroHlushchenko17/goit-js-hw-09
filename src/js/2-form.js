@@ -40,6 +40,11 @@ const onFeedbackFormSudmit = event => {
 
   event.target.reset();
   localStorage.removeItem('feedback-form-state');
+
+  formData = {
+    email: '',
+    message: '',
+  };
 };
 fillFeedbackFormFields();
 
